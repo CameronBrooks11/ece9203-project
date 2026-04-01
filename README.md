@@ -2,9 +2,8 @@
 
 This is the code repository for the ECE9203: Random Signals. This project is focused on the analysis and processing of random signals using adaptive filtering techniques.
 
-## References
+- primary data source for offline analysis: https://dofpro.org/RCK/fltdata/FlightData.html
 
-- [Real-time model correction using Kalman filter for Raman-controlled cell culture processes](https://doi.org/10.1016/j.cjche.2024.03.016)
-- [State estimation Kalman filter using optical processing: noise statistics known](https://doi.org/10.1364/AO.23.000376)
-- [A user-friendly, low-cost turbidostat with versatile growth rate estimation based on an extended Kalman filter](https://doi.org/10.1371/journal.pone.0181923)
-- [Pioreactor - Pioreactor development log #5 - Cell Density, Optical Density, and Growth](https://pioreactor.com/en-ca/blogs/pioreactor/estimating-growth-rates-with-kalman-filters)
+- Main estimator: EKF for altitude + vertical velocity + accelerometer bias from IMU (accelerometer + gyroscope + magnetometer) + barometer
+
+- tech stack plan: C99 core with Python (+ optional MATLAB) for data analysis and visualization
